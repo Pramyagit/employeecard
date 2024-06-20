@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+body {
+  background-image: linear-gradient(to right, rgba(0, 128, 0, 0.685), white);
+}
+
+h2 {
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: hsla(0, 0%, 0%, 0.379);
+  background-image: url(./image/glass-8826661_1280.jpg);
+  background-position: bottom;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  text-wrap: wrap;
+  text-shadow: 1px 1px;
+}
+
+.dept {
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 1px solid green;
+  margin: 10px 10px 0 10px;
+  padding: 5px;
+  justify-content: center;
+  /* background-color: aquamarine; */
+  background-image: url(./image/glass-8826661_1280.jpg);
+  background-position: center;
+  background-clip: text;
+  color: hsla(0, 0%, 16%, 0.4);
+  text-align: center;
+}
+li a {
+  border: 1px solid green;
+  border-radius: 15%;
+  text-decoration: underline;
+}
+li a:visited {
+  color: rgb(48, 23, 237);
+}
+li a:focus {
+  color: rgb(201, 14, 20);
+}
+li a:hover {
+  background-color: white;
+  border-radius: 15%;
+  color: rgb(18, 17, 17);
+  text-decoration: none;
+}
+main {
+  flex-grow: 1;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+  justify-content: center;
+}
+.details {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(106, 220, 161, 0.292);
+  box-shadow: 2px 1px 2px 1px;
+  background-image: url(./image/glass-8826661_1280.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.352);
+  text-align: center;
+}
+img {
+  border: 1px solid gray;
+  border-radius: 50%;
+  box-shadow: 1px 0px 0px 1px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 30px;
+  background-color: hsla(0, 0%, 0%, 0.379);
+}
+@media screen and (min-width: 750px) {
+  h2 {
+    font-size: 30px;
+  }
+  .dept {
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .details {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .details img {
+    width: 150px;
+    height: 150px;
+  }
+  section:nth-child(2) {
+    order: -1;
+  }
+}
