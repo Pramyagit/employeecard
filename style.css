@@ -104,6 +104,10 @@ img {
   border-radius: 50%;
   box-shadow: 1px 0px 0px 1px;
 }
+section:target {
+  border: 3px solid rgb(7, 211, 48);
+  border-radius: 10px;
+}
 footer {
   display: flex;
   justify-content: center;
